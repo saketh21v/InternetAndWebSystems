@@ -5,11 +5,10 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,7 +19,7 @@
         <h3>Saketh Vallakatla</h3>
         <p><a href="mailto:sv721@snu.edu.in">sv721@snu.edu.in</a>; <a href="mailto:saketh21v@gmail.com">saketh21v@gmail.com</a> | +91-8130778727
         </p>
-        <div class="row">
+        <!-- <div class="row">
             <div class="col s3">
                 <a href="#Education">Education</a>
             </div>
@@ -33,7 +32,17 @@
             <div class="col s3">
                 Additional Information
             </div>
-        </div>
+        </div> -->
+        <nav>
+            <div class="nav-wrapper">
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="#Education">Education</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Internships">Internships</a></li>
+                    <li><a href="#Additional">Additional Info</a></li>
+                </ul>
+            </div>
+        </nav>
 
         <p>&nbsp;</p>
         <div class="row">
@@ -102,7 +111,7 @@
             </div>
             <p>&nbsp;</p>
             <div class="col s12 z-depth-1">
-                <h4>Projects:</h4>
+                <h4 id="Projects">Projects:</h4>
                 <p><strong>&nbsp;</strong></p>
                 <ul>
                     <li><strong><em>Peer Music Player(On-going)</em></strong>:<strong> Semester-5</strong>
@@ -166,7 +175,7 @@
             </div>
             <p>&nbsp;</p>
             <div class="col s12 z-depth-1">
-                <h4>INTERNSHIPS/PROFESSIONAL EXPERIENCE</h4>
+                <h4 id="Internships">INTERNSHIPS/PROFESSIONAL EXPERIENCE</h4>
                 <ul>
                     <li><strong><em>Abhyaas Educational Institute 3<sup>rd</sup> June 2016 </em></strong><em>to<strong> 27<sup>th</sup> July 2016</strong></em>
                         <ul>
@@ -191,7 +200,7 @@
                 </ul>
             </div>
             <div class="col s12 z-depth-1">
-                <h4>ADDITIONAL SKILLS/QUALIFICATION</h4>
+                <h4 id="Additional">ADDITIONAL SKILLS/QUALIFICATION</h4>
                 <ul>
                     <li><strong><em>Programming:</em></strong>
                         <ul>
