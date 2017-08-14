@@ -5,7 +5,11 @@ body {
 nav ul li {
     display: inline-block;
     padding: 15px;
-    float: left;
+    /* float: left; */
+}
+
+nav ul li:hover {
+    background-color: #4f4f4f;
 }
 
 nav {
@@ -26,18 +30,18 @@ main {
     align-content: center;
     align-self: center;
     margin-left: 5%;
-    background-color: #fffff8;
+    /* background-color: #fffff8; */
 }
 
 article {
     display: inline-block;
     width: 30%;
-    border: 2px solid whitesmoke;
+    border: 5px solid whitesmoke;
     padding: 10px;
 }
 
 header {
-    background-color: blue;
+    background-color: aliceblue;
 }
 
 aside {
@@ -46,7 +50,7 @@ aside {
     height: 95%;
     /* min-height: 80%; */
     border: 0.2em dotted gray;
-    margin-top: 2em;
+    margin-top: 2.5em;
 }
 
 aside div {
@@ -77,6 +81,18 @@ aside section {
     height: 250px;
 }
 
-a href {
-    color: black;
+a {
+    color: whitesmoke;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* a:hover {
+    background-color: #4f4f4f;
+} */
+
+.Main_Title div {
+    margin-left: 2.1em;
 }
