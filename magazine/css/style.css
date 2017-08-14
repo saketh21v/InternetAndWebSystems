@@ -70,6 +70,7 @@ hr {
 .News_Section {
     /* background-color: #e0e0e0; */
     background-color: whitesmoke;
+    border: 0.5em none;
 }
 
 section article {
