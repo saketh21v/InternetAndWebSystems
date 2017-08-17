@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <script>
+        function clime() {
+            var b1 = document.getElementById("Box1");
+            var b2 = document.getElementById("Box2");
+            var b3 = document.getElementById("Box3");
+            b1.style.visibility = (b1.style.visibility == "visible") ? "hidden" : "visible";
+            b2.style.visibility = (b2.style.visibility == "visible") ? "hidden" : "visible";
+            b3.style.visibility = (b3.style.visibility == "visible") ? "hidden" : "visible";
+        }
+    </script>
+</head>
+
+<body>
+    <button type="button" id="btn" onclick="javascript:clime()">Cli.Me.</button>
+    <div id="Box1" style="width:5cm;height:5cm;background:aqua;visibility: hidden"></div>
+    <div id="Box2" style="width:5cm;height:5cm;background:red;visibility: hidden"></div>
+    <div id="Box3" style="width:5cm;height:5cm;background:blue;visibility: hidden"></div>
+</body>
+
+</html>
