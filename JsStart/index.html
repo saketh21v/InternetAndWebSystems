@@ -7,13 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link href="css/style.css" rel="stylesheet"> -->
     <script>
+        counter = 0;
+
         function clime() {
             var b1 = document.getElementById("Box1");
             var b2 = document.getElementById("Box2");
             var b3 = document.getElementById("Box3");
-            b1.style.visibility = (b1.style.visibility == "visible") ? "hidden" : "visible";
-            b2.style.visibility = (b2.style.visibility == "visible") ? "hidden" : "visible";
-            b3.style.visibility = (b3.style.visibility == "visible") ? "hidden" : "visible";
+            switch (counter++ % 3) {
+                case 0:
+                    b1.style.visibility = (b1.style.visibility == "visible") ? "hidden" : "visible";
+                    break;
+                case 1:
+                    b2.style.visibility = (b2.style.visibility == "visible") ? "hidden" : "visible";
+                    break;
+                case 2:
+                    b3.style.visibility = (b3.style.visibility == "visible") ? "hidden" : "visible";
+            }
         }
     </script>
 </head>
