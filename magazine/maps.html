@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var India = {
+                lat: 28.526272,
+                lng: 77.577071
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 18,
+                center: India
+            });
+            var marker = new google.maps.Marker({
+                position: India,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArJebjUao2xkPL7w12dRKDMOcjhVBfHPs&callback=initMap">
+    </script>
+</body>
+
+</html>
