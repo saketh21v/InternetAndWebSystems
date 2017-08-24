@@ -1,3 +1,4 @@
+// Author: Saketh Vallakatla
 function loadForm(e) {
     var inputForm = document.getElementById('inputForm');
     inputForm.innerHTML = "";
@@ -91,12 +92,17 @@ function validate() {
             var c = parseInt(inputForm.children[2].value);
             var p = (a + b + c) / 2;
             var area = Math.sqrt(p * (p - a) * (p - b) * (p - c));
-            alert("Area = " + area);
+            if (!Number.isNaN(area))
+                alert("Area = " + area);
             break;
         case "Circ":
             ctx.strokeStyle = "Black";
             ctx.arc(95, 50, 40, 0, 2 * Math.PI);
             ctx.stroke();
+
+            var rad = parseFloat(inputForm.children[0].value);
+            if (!Number.isNaN(rad))
+                alert("Area = " + rad * rad * Math.PI);
             break;
         case "Hex":
             ctx.strokeStyle = "Blue";
@@ -109,6 +115,12 @@ function validate() {
             ctx.lineTo(0, 80);
             ctx.closePath();
             ctx.fill();
+
+            var a = parseFloat(inputForm.children[0].value);
+            var p = 3 * a / 2;
+            var area = 6 * (p * Math.pow(p - a, 3));
+            if (!Number.isNaN(area))
+                alert("Area = " + area);
             break;
         default:
             alert("Nothing");
