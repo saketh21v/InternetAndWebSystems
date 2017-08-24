@@ -1,9 +1,7 @@
-'use strict'
-
 function validate() {
     var canvas = document.getElementById("can");
     var radios = document.getElementsByName("shape");
-    let option;
+    var option;
     radios.forEach(function(element) {
         if (element.checked)
             option = element.value;
@@ -31,6 +29,7 @@ function validate() {
         case "Circ":
             ctx.arc(95, 50, 40, 0, 2 * Math.PI);
             ctx.stroke();
+            break;
         default:
             break;
     }
