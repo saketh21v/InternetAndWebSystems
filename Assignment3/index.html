@@ -5,18 +5,20 @@
     <title>Lab Assignment 3</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <script src="script.js"></script>
 </head>
 
 <body>
     <section id="FormSection">
-
-        <input type="radio" value="Rect" name="shape"> Rectangle <br>
-        <input type="radio" value="Tri" name="shape"> Traingle <br>
-        <input type="radio" value="Circ" name="shape"> Circle <br>
-        <button onclick="javascript:validate()">Submit</button>
-
+        <div id="radioForm">
+            <input type="radio" value="Rect" name="shape"> Rectangle <br>
+            <input type="radio" value="Tri" name="shape"> Traingle <br>
+            <input type="radio" value="Circ" name="shape"> Circle <br>
+            <button onclick="javascript:validate()">Submit</button>
+        </div>
+        <div id="inputForm">
+        </div>
     </section>
     <hr>
     <section id="CanvasSection">

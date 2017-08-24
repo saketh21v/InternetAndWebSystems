@@ -1,0 +1,16 @@
+#FormSection {
+    display: inline-block;
+    width: 600px;
+}
+
+#radioForm {
+    float: left;
+    display: inline-block;
+    width: 50%;
+}
+
+#inputForm {
+    float: right;
+    display: inline-block;
+    width: 50%;
+}
