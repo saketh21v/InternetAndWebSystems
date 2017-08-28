@@ -83,11 +83,6 @@
 
 /* ------------------------------------------ */
 
-#navOpenBtn {
-    font-size: 2em;
-    cursor: pointer;
-}
-
 .closebtn {
     cursor: pointer;
 }
@@ -104,8 +99,10 @@ main {
 }
 
 header {
-    height: 2em;
+    height: 2.7em;
     background: #5E5E5E;
+    width: 90%;
+    padding-left: 5em;
 }
 
 .Nav {
@@ -141,4 +138,10 @@ header {
     /* display: inline; */
     float: left;
     width: 30%;
+}
+
+#navOpenBtn {
+    font-size: 2em;
+    cursor: pointer;
+    padding: unset;
 }
