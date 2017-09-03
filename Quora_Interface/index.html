@@ -13,16 +13,22 @@
 <body>
     <!-- header start -->
     <header id="wrapper-header">
-        <div id="logo"></div>
+        <div id="header-logo"><a href="#">Quor..</a></div>
         <nav id="header-nav-bar">
             <a href="#" id="menu-icon"></a>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">My Answers</a></li>
-                <li><a href="#">My Questions</a></li>
-                <li><a href="#">Profile</a></li>
+                <li><a href="#">Answers</a></li>
+                <li><a href="#">Notifications</a></li>
+                <!-- <li><a href="#">Profile</a></li> -->
+                <li>
+                    <div id="search"><i class="fa fa-search"></i><input id="search-bar" type="search" name="searchbar" placeholder="Search Quor.."></div>
+                </li>
             </ul>
         </nav>
+        <div id="header-profile">
+            <i class="fa fa-user"></i><i id="profile-text">Profile</i>
+        </div>
     </header>
     <!-- End of header -->
 
@@ -42,24 +48,29 @@
 
         <!-- Main section -->
         <main>
-            <section>
-                <div class="profile_logo"></div>
+            <section id="answer-section">
                 <article>
                     <h3>Why?Why?Why?Why?Why?Why?Why?</h3>
+                    <div class="askedby-user"><i class="fa fa-user"></i>Asked by Panda</div>
                     <p>In computing, tar is a computer software utility for collecting many files into one archive file, often
                         referred to as a tarball, for distribution or backup purposes. The name is derived from (t)ape (ar)chive,
                         as it was originally developed to write data to sequential I/O devices with no file system of their
                         own. The archive data sets created by tar contain various file system parameters, such as name, time
                         stamps, ownership, file access permissions, and directory organization</p>
+                    <div class="answeredby-user"><i class="fa fa-user"></i>Answered by Panda</div>
+                    <div class="profile_logo"></div>
+                    <br>
                 </article>
-                <div class="profile_logo"></div>
                 <article>
                     <h3>Why?Why?Why?Why?Why?Why?Why?</h3>
+                    <div class="askedby-user"><i class="fa fa-user"></i>Asked by Panda</div>
                     <p>In computing, tar is a computer software utility for collecting many files into one archive file, often
                         referred to as a tarball, for distribution or backup purposes. The name is derived from (t)ape (ar)chive,
                         as it was originally developed to write data to sequential I/O devices with no file system of their
                         own. The archive data sets created by tar contain various file system parameters, such as name, time
                         stamps, ownership, file access permissions, and directory organization</p>
+                    <div class="answeredby-user"><i class="fa fa-user"></i>Answered by Panda</div>
+                    <br>
                 </article>
             </section>
         </main>
