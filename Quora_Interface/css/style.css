@@ -1,6 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
-
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -37,7 +36,7 @@ header {
     height: 60px;
 }
 
-#header-logo a{
+#header-logo a {
     font-family: Baskerville;
     font-size: 30px;
     float: left;
@@ -46,6 +45,8 @@ header {
     color: #CB0F0F;
     text-decoration: none;
 }
+
+
 /* Start navigation style */
 
 nav {
@@ -107,7 +108,9 @@ ul {
     text-decoration: underline;
 }
 
+
 /* End nav */
+
 
 /* Profile begins */
 
@@ -119,7 +122,7 @@ ul {
 }
 
 #header-profile:hover {
-    cursor: pointer; 
+    cursor: pointer;
     color: #B3B3B3;
 }
 
@@ -130,7 +133,9 @@ ul {
     padding-left: 0.5rem;
 }
 
+
 /* End of profile */
+
 
 /* Left Nav Panel */
 
@@ -158,11 +163,15 @@ ul {
 #left-nav-bar ul li:hover {
     background-color: gray;
     cursor: pointer;
-    width: 100%; 
+    width: 100%;
 }
+
+
 /* End of left nav panel */
 
+
 /* Main begins */
+
 main {
     float: left;
     width: 60%;
@@ -170,7 +179,7 @@ main {
 }
 
 .askedby-user {
-    padding: 0; 
+    padding: 0;
     padding-right: 3rem;
     float: right;
 }
@@ -178,29 +187,64 @@ main {
 .askedby-user i {
     padding-right: 0.5rem;
 }
+.askedby-user:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 .answeredby-user {
-    padding: 0; 
+    padding: 0;
     padding-right: 3rem;
     padding-bottom: 3rem;
     float: right;
+}
+
+.answeredby-user:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .answeredby-user i {
     padding-right: 0.5rem;
 }
 
+
 #answer-section article {
-    border: 1px solid #595959;
+    background-color: #fafafa;
+    /* border: 1px solid #595959; */
+    border-radius: 2px;
+    /* box-shadow: 2px 2px 2px 2px #888888; */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     padding-bottom: 1rem;
+    
     margin: 1rem;
+    margin-right: -3rem;
+}
+
+#answer-section article:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25), 0 3px 6px rgba(0, 0, 0, 0.22);
 }
 
 #answer-section article h3 {
     margin-left: 1rem;
     margin-bottom: -2rem;
 }
+
+#answer-section article h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #6991AC;
+}
+
+#answer-section article p:hover {
+    cursor: pointer;
+}
+
+
+
 /* End of Main */
+
 
 /* Right panel */
 
@@ -215,9 +259,12 @@ aside {
 aside h4 {
     text-decoration: underline;
 }
+
 aside h4:hover {
     cursor: pointer;
 }
+
+
 /* Start of the footer */
 
 #share {
@@ -234,9 +281,10 @@ aside h4:hover {
     text-align: center;
 }
 
-footer{
+footer {
     clear: both;
 }
+
 
 /* End of social footer */
 
