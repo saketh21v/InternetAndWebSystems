@@ -17,9 +17,10 @@
         <nav id="header-nav-bar">
             <a href="#" id="menu-icon"></a>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li onclick="javascript:openHome()"><a href="#">Home</a></li>
                 <li><a href="#">Answers</a></li>
                 <li><a href="#">Notifications</a></li>
+                <li onclick="javascript:openTrending()"><a href="#">Trending</a></li>
                 <!-- <li><a href="#">Profile</a></li> -->
                 <li>
                     <div id="search"><i class="fa fa-search"></i><input id="search-bar" type="search" name="searchbar" placeholder="Search Quor.."></div>
@@ -37,6 +38,7 @@
         <section class="section-nav-bar">
             <nav id="left-nav-bar">
                 <ul>
+                    <li><a href="#" onclick="javascript:addTopic()">Add Topic ⊕</a></li>
                     <li><a href="#">Sports</a></li>
                     <li><a href="#">Computers</a></li>
                     <li><a href="#">Cosmos</a></li>
@@ -47,8 +49,8 @@
         <!-- End of left navbar -->
 
         <!-- Main section -->
-        <main>
-            <section id="answer-section">
+        <main id="Main">
+            <section class="answer-section" id="answer-section-main">
                 <article>
                     <h3>What are great resource to learn blockchain technologies?</h3>
                     <div class="askedby-user"><i class="fa fa-user"></i>Asked by Julian Frank</div>
@@ -74,6 +76,70 @@
                     <div class="profile_logo"></div>
                     <br>
                 </article>
+            </section>
+            <section id="trending-section" hidden="true">
+                <section id="map-section">
+                    <div id="map"></div>
+                    <script>
+                        function initMap() {
+                            var uluru = {
+                                lat: -25.363,
+                                lng: 131.044
+                            };
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                                zoom: 4,
+                                center: uluru
+                            });
+                            var marker = new google.maps.Marker({
+                                position: uluru,
+                                map: map
+                            });
+                        }
+                    </script>
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArJebjUao2xkPL7w12dRKDMOcjhVBfHPs&callback=initMap">
+                    </script>
+                </section>
+                <section class="answer-section" id="answer-section-trending">
+                    <article>
+                        <h3>Trending question</h3>
+                        <div class="askedby-user"><i class="fa fa-user"></i>Asked by Julian Frank</div>
+                        <p>Blockchain is the latest innovations in the sphere of digital technology & is on its way to create
+                            a revolution in the sphere of the digital economy called cryptocurrency. Blockchain makes use
+                            of very advanced algorithms which greatly reduces the dependence on people to verify all sorts
+                            of transactions. In simpler terms Blockchain can be defined as an anonymous online ledger which
+                            makes use of the online data structure and thereby simplifies the way we transact. Also, Blockchain
+                            uses a more secured networking system that protects the identity of its users & thus making the
+                            transactions become highly secured.</p>
+                        <div class="answeredby-user"><i class="fa fa-user"></i>Answered by Anonymous</div>
+                        <br>
+                    </article>
+                    <article>
+                        <h3>Trending question</h3>
+                        <div class="askedby-user"><i class="fa fa-user"></i>Asked by Julian Frank</div>
+                        <p>Blockchain is the latest innovations in the sphere of digital technology & is on its way to create
+                            a revolution in the sphere of the digital economy called cryptocurrency. Blockchain makes use
+                            of very advanced algorithms which greatly reduces the dependence on people to verify all sorts
+                            of transactions. In simpler terms Blockchain can be defined as an anonymous online ledger which
+                            makes use of the online data structure and thereby simplifies the way we transact. Also, Blockchain
+                            uses a more secured networking system that protects the identity of its users & thus making the
+                            transactions become highly secured.</p>
+                        <div class="answeredby-user"><i class="fa fa-user"></i>Answered by Anonymous</div>
+                        <br>
+                    </article>
+                    <article>
+                        <h3>Trending question</h3>
+                        <div class="askedby-user"><i class="fa fa-user"></i>Asked by Julian Frank</div>
+                        <p>Blockchain is the latest innovations in the sphere of digital technology & is on its way to create
+                            a revolution in the sphere of the digital economy called cryptocurrency. Blockchain makes use
+                            of very advanced algorithms which greatly reduces the dependence on people to verify all sorts
+                            of transactions. In simpler terms Blockchain can be defined as an anonymous online ledger which
+                            makes use of the online data structure and thereby simplifies the way we transact. Also, Blockchain
+                            uses a more secured networking system that protects the identity of its users & thus making the
+                            transactions become highly secured.</p>
+                        <div class="answeredby-user"><i class="fa fa-user"></i>Answered by Anonymous</div>
+                        <br>
+                    </article>
+                </section>
             </section>
         </main>
         <aside>
