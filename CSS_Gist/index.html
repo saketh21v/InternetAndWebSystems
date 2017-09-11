@@ -13,16 +13,21 @@
     <aside>
         <nav id="left-nav-bar">
             <ul>
-                <li><a href="#" onclick="javascript:selectElem('color')">color</a></li>
-                <li><a href="#" onclick="javascript:selectElem('background')">background</a></li>
-                <li><a href="#" onclick="javascript:selectElem('background-color')">background-color</a></li>
-                <li><a href="#" onclick="javascript:selectElem('border')">border</a></li>
-                <li><a href="#" onclick="javascript:selectElem('border-color')">border-color</a></li>
-                <li><a href="#" onclick="javascript:selectElem('clear')">clear</a></li>
-                <li><a href="#" onclick="javascript:selectElem('height')">height</a></li>
-                <li><a href="#" onclick="javascript:selectElem('float')">float</a></li>
-                <li><a href="#" onclick="javascript:selectElem('margin')">margin</a></li>
-                <li><a href="#" onclick="javascript:selectElem('padding')">padding</a></li>
+                <li onclick="javascript:selectElem('color')"><a href="#">color</a></li>
+                <li onclick="javascript:selectElem('background')"><a href="#">background</a></li>
+                <li onclick="javascript:selectElem('background-color')"><a href="#">background-color</a></li>
+                <li onclick="javascript:selectElem('border')"><a href="#">border</a></li>
+                <li onclick="javascript:selectElem('border-color')"><a href="#">border-color</a></li>
+                <li onclick="javascript:selectElem('clear')"><a href="#">clear</a></li>
+                <li onclick="javascript:selectElem('height')"><a href="#">height</a></li>
+                <li onclick="javascript:selectElem('float')"><a href="#">float</a></li>
+                <li onclick="javascript:selectElem('margin')"><a href="#">margin</a></li>
+                <li onclick="javascript:selectElem('padding')"><a href="#">padding</a></li>
+                <li onclick="javascript:selectElem('block')"><a href="#">block</a></li>
+                <li onclick="javascript:selectElem('import')"><a href="#">@import</a></li>
+                <li onclick="javascript:selectElem('text-transform')"><a href="#">text-transform</a></li>
+                <li onclick="javascript:selectElem('cursor')"><a href="#">cursor </a></li>
+                <li onclick="javascript:selectElem('font-family')"><a href="#">font-family</a></li>
             </ul>
         </nav>
         <!-- End of left navbar -->
@@ -44,6 +49,11 @@
                     part of the flow (in contrast to absolute positioning).</p>
                 <p hidden id="margin">The margin CSS property sets the margin area on all four sides of an element. It is a shorthand that sets all individual margins at once: margin-top, margin-right, margin-bottom, and margin-left.</p>
                 <p hidden id="padding">The padding CSS property sets the padding area on all four sides of an element. It is a shorthand that sets all individual paddings at once: padding-top, padding-right, padding-bottom, and padding-left.</p>
+                <p hidden id="block">Block level elements by default take up as much space as they can, and they cannot be placed on the same horizontal line with any other display modes, include other block elements.</p>
+                <p hidden id="import">The @import CSS at-rule is used to import style rules from other style sheets. These rules must precede all other types of rules, except @charset rules; as it is not a nested statement, @import cannot be used inside conditional group at-rules.</p>
+                <p hidden id="cursor">The cursor attribute specifies the mouse cursor displayed when the mouse pointer is over an element.</p>
+                <p hidden id="font-family">The font-family CSS property specifies a prioritized list of one or more font family names and/or generic family names for the selected element.</p>
+                <p hidden id="text-transform">The text-transform CSS property specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalize</p>
             </div>
         </main>
     </aside>

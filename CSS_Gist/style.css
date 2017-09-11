@@ -29,6 +29,7 @@ body {
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 120%;
     padding: 5px 2px 5px 8px;
+    cursor: pointer;
 }
 
 #left-nav-bar ul li a {
@@ -54,5 +55,5 @@ main {
     float: left;
     width: 60%;
     padding: 1rem;
-    font-family: 'Ale'
+    font-family: 'Ale';
 }
