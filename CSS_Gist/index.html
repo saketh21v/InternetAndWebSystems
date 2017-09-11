@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <aside>
+        <nav id="left-nav-bar">
+            <ul>
+                <li><a href="#" onclick="javascript:selectElem('color')">color</a></li>
+                <li><a href="#" onclick="javascript:selectElem('background')">background</a></li>
+                <li><a href="#" onclick="javascript:selectElem('background-color')">background-color</a></li>
+                <li><a href="#" onclick="javascript:selectElem('border')">border</a></li>
+                <li><a href="#" onclick="javascript:selectElem('border-color')">border-color</a></li>
+                <li><a href="#" onclick="javascript:selectElem('clear')">clear</a></li>
+                <li><a href="#" onclick="javascript:selectElem('height')">height</a></li>
+                <li><a href="#" onclick="javascript:selectElem('float')">float</a></li>
+                <li><a href="#" onclick="javascript:selectElem('margin')">margin</a></li>
+                <li><a href="#" onclick="javascript:selectElem('padding')">padding</a></li>
+            </ul>
+        </nav>
+        <!-- End of left navbar -->
+        <main id="Main">
+            <h2 id='heading'>COLOR</h2>
+            <br>
+            <div id="gists">
+                <p id="color">The color CSS property sets the foreground color value of an element's text content and text decorations. It also sets the currentcolor value, which may be used as an indirect value on other properties, and is the default for other color
+                    properties, such as border-color</p>
+                <p hidden id="background">The background shorthand property sets all the background properties in one declaration. The properties that can be set, are: background-color, background-image, background-position, background-size, background-repeat, background-origin,
+                    background-clip, and background-attachment</p>
+                <p hidden id="background-color">The background-color property sets the background color of an element. The background of an element is the total size of the element, including padding and border</p>
+                <p hidden id="border">The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
+                <p hidden id="border-color">The border-color CSS property is a shorthand property for setting the color of the four sides of an element's border: border-top-color, border-right-color, border-bottom-color, border-left-color</p>
+                <p hidden id="clear">The clear CSS property specifies whether an element can be next to floating elements that precede it or must be moved down (cleared) below them. The clear property applies to both floating and non-floating elements.</p>
+                <p hidden id="height">The height CSS property specifies the height of an element. By default, the property defines the height of the content area. If box-sizing is set to border-box, it instead determines the height of the border area.</p>
+                <p hidden id="float">
+                    The float CSS property specifies that an element should be placed along the left or right side of its container, allowing text and inline elements to wrap around it. The element is removed from the normal flow of the web page, though still remaining a
+                    part of the flow (in contrast to absolute positioning).</p>
+                <p hidden id="margin">The margin CSS property sets the margin area on all four sides of an element. It is a shorthand that sets all individual margins at once: margin-top, margin-right, margin-bottom, and margin-left.</p>
+                <p hidden id="padding">The padding CSS property sets the padding area on all four sides of an element. It is a shorthand that sets all individual paddings at once: padding-top, padding-right, padding-bottom, and padding-left.</p>
+            </div>
+        </main>
+    </aside>
+</body>
+
+</html>
