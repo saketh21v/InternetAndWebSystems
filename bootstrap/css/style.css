@@ -1,0 +1,49 @@
+body {
+    /* overflow-x: hidden; */
+}
+
+
+/* .card {
+    border: 2 solid black;
+} */
+
+
+/* .container {
+    padding: 2px;
+}
+
+.item.active {
+    height: 600px;
+    overflow: hidden;
+}
+
+.item.active img {
+    height: 500px;
+    width: 1366px;
+    overflow: hidden;
+}
+
+.item img {
+    height: 500px;
+    width: 1366px;
+    overflow: hidden;
+} */
+
+#carouselMain {
+    height: 500px;
+    width: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-inner img {
+    height: 100%;
+}
+
+.col-md-2 img {
+    cursor: pointer;
+    height: 70%;
+    width: 70%;
+}
