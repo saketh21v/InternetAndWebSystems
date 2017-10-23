@@ -13,22 +13,36 @@
 <body>
     <!-- header start -->
     <header id="wrapper-header">
-        <div id="header-logo"><a href="#">Quor..</a></div>
+        <div id="header-logo">
+            <a href="#">Quor..</a>
+        </div>
         <nav id="header-nav-bar">
             <a href="#" id="menu-icon"></a>
             <ul>
-                <li onclick="javascript:openHome()"><a href="#">Home</a></li>
-                <li><a href="#">Answers</a></li>
-                <li><a href="#">Notifications</a></li>
-                <li onclick="javascript:openTrending()"><a href="#">Trending</a></li>
+                <li onclick="javascript:openHome()">
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Answers</a>
+                </li>
+                <li>
+                    <a href="#">Notifications</a>
+                </li>
+                <li onclick="javascript:openTrending()">
+                    <a href="#">Trending</a>
+                </li>
                 <!-- <li><a href="#">Profile</a></li> -->
                 <li>
-                    <div id="search"><i class="fa fa-search"></i><input id="search-bar" type="search" name="searchbar" placeholder="Search Quor.."></div>
+                    <div id="search">
+                        <i class="fa fa-search"></i>
+                        <input id="search-bar" type="search" name="searchbar" placeholder="Search Quor..">
+                    </div>
                 </li>
             </ul>
         </nav>
         <div id="header-profile">
-            <i class="fa fa-user"></i><i id="profile-text">Saketh Vallakatla</i>
+            <i class="fa fa-user"></i>
+            <i id="profile-text">Saketh Vallakatla</i>
         </div>
     </header>
     <!-- End of header -->
@@ -38,11 +52,26 @@
         <section class="section-nav-bar">
             <nav id="left-nav-bar">
                 <ul>
-                    <li><a href="#" onclick="javascript:addTopic()">Add Topic ⊕</a></li>
-                    <li><a href="#">Sports</a></li>
-                    <li><a href="#">Computers</a></li>
-                    <li><a href="#">Cosmos</a></li>
-                    <li><a href="#">Oceania</a></li>
+                    <li>
+                        <a href="#" onclick="javascript:addTopic()">Add Topic ⊕</a>
+                    </li>
+                    <li>
+                        <a onclick="javascript:changeCat('sports')" href="#">Sports</a>
+                    </li>
+                    <li>
+                        <a onclick="javascript:changeCat('computers')" href="#">Computers</a>
+                    </li>
+                    <li>
+                        <a onclick="javascript:changeCat('cosmos')" href="#">Cosmos</a>
+                    </li>
+                    <li>
+                        <a onclick="javascript:changeCat('physics')" href="#">Physics</a>
+                    </li>
+
+                    <form hidden action="/index" id="ChangeCatForm" method="GET">
+                        <input name="topic" id="inputCat" type="text" hidden>
+                    </form>
+
                 </ul>
             </nav>
         </section>
@@ -51,31 +80,7 @@
         <!-- Main section -->
         <main id="Main">
             <section class="answer-section" id="answer-section-main">
-                <article>
-                    <h3>What are great resource to learn blockchain technologies?</h3>
-                    <div class="askedby-user"><i class="fa fa-user"></i>Asked by Julian Frank</div>
-                    <p>Blockchain is the latest innovations in the sphere of digital technology & is on its way to create a
-                        revolution in the sphere of the digital economy called cryptocurrency. Blockchain makes use of very
-                        advanced algorithms which greatly reduces the dependence on people to verify all sorts of transactions.
-                        In simpler terms Blockchain can be defined as an anonymous online ledger which makes use of the online
-                        data structure and thereby simplifies the way we transact. Also, Blockchain uses a more secured networking
-                        system that protects the identity of its users & thus making the transactions become highly secured.</p>
-                    <div class="answeredby-user"><i class="fa fa-user"></i>Answered by Anonymous</div>
-                    <br>
-                </article>
-                <article>
-                    <h3>What are great resource to learn blockchain technologies?</h3>
-                    <div class="askedby-user"><i class="fa fa-user"></i>Asked by Julian Frank</div>
-                    <p>Blockchain is the latest innovations in the sphere of digital technology & is on its way to create a
-                        revolution in the sphere of the digital economy called cryptocurrency. Blockchain makes use of very
-                        advanced algorithms which greatly reduces the dependence on people to verify all sorts of transactions.
-                        In simpler terms Blockchain can be defined as an anonymous online ledger which makes use of the online
-                        data structure and thereby simplifies the way we transact. Also, Blockchain uses a more secured networking
-                        system that protects the identity of its users & thus making the transactions become highly secured.</p>
-                    <div class="answeredby-user"><i class="fa fa-user"></i>Answered by Anonymous</div>
-                    <div class="profile_logo"></div>
-                    <br>
-                </article>
+                ###%%%###
             </section>
             <section id="trending-section" hidden="true">
                 <section id="map-section">
@@ -102,7 +107,8 @@
                 <section class="answer-section" id="answer-section-trending">
                     <article>
                         <h3>Trending question</h3>
-                        <div class="askedby-user"><i class="fa fa-user"></i>Asked by Julian Frank</div>
+                        <div class="askedby-user">
+                            <i class="fa fa-user"></i>Asked by Julian Frank</div>
                         <p>Blockchain is the latest innovations in the sphere of digital technology & is on its way to create
                             a revolution in the sphere of the digital economy called cryptocurrency. Blockchain makes use
                             of very advanced algorithms which greatly reduces the dependence on people to verify all sorts
@@ -110,12 +116,14 @@
                             makes use of the online data structure and thereby simplifies the way we transact. Also, Blockchain
                             uses a more secured networking system that protects the identity of its users & thus making the
                             transactions become highly secured.</p>
-                        <div class="answeredby-user"><i class="fa fa-user"></i>Answered by Anonymous</div>
+                        <div class="answeredby-user">
+                            <i class="fa fa-user"></i>Answered by Anonymous</div>
                         <br>
                     </article>
                     <article>
                         <h3>Trending question</h3>
-                        <div class="askedby-user"><i class="fa fa-user"></i>Asked by Julian Frank</div>
+                        <div class="askedby-user">
+                            <i class="fa fa-user"></i>Asked by Julian Frank</div>
                         <p>Blockchain is the latest innovations in the sphere of digital technology & is on its way to create
                             a revolution in the sphere of the digital economy called cryptocurrency. Blockchain makes use
                             of very advanced algorithms which greatly reduces the dependence on people to verify all sorts
@@ -123,12 +131,14 @@
                             makes use of the online data structure and thereby simplifies the way we transact. Also, Blockchain
                             uses a more secured networking system that protects the identity of its users & thus making the
                             transactions become highly secured.</p>
-                        <div class="answeredby-user"><i class="fa fa-user"></i>Answered by Anonymous</div>
+                        <div class="answeredby-user">
+                            <i class="fa fa-user"></i>Answered by Anonymous</div>
                         <br>
                     </article>
                     <article>
                         <h3>Trending question</h3>
-                        <div class="askedby-user"><i class="fa fa-user"></i>Asked by Julian Frank</div>
+                        <div class="askedby-user">
+                            <i class="fa fa-user"></i>Asked by Julian Frank</div>
                         <p>Blockchain is the latest innovations in the sphere of digital technology & is on its way to create
                             a revolution in the sphere of the digital economy called cryptocurrency. Blockchain makes use
                             of very advanced algorithms which greatly reduces the dependence on people to verify all sorts
@@ -136,7 +146,8 @@
                             makes use of the online data structure and thereby simplifies the way we transact. Also, Blockchain
                             uses a more secured networking system that protects the identity of its users & thus making the
                             transactions become highly secured.</p>
-                        <div class="answeredby-user"><i class="fa fa-user"></i>Answered by Anonymous</div>
+                        <div class="answeredby-user">
+                            <i class="fa fa-user"></i>Answered by Anonymous</div>
                         <br>
                     </article>
                 </section>
@@ -147,7 +158,7 @@
                 <article>
                     <h4>Question Bookmark</h4>
                     <p>Lorem Ipsum.. Ipsum Lorem..</p>
-                </article>                
+                </article>
                 <article>
                     <h4>Question Bookmark</h4>
                     <p>Lorem Ipsum.. Ipsum Lorem..</p>
@@ -177,15 +188,34 @@
     </section>
     <footer>
         <ul class="social">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </li>
         </ul>
     </footer>
     <!-- End of footer -->
-
 </body>
 
 </html>

@@ -21,3 +21,9 @@ function addTopic() {
     newLi.appendChild(ahref);
     ul.appendChild(newLi);
 }
+
+function changeCat(topic){
+    console.log(topic);
+    document.getElementById('inputCat').value = topic;
+    document.forms[0].submit();
+}
