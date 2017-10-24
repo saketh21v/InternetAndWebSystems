@@ -8,6 +8,8 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <script src="js/script.js"></script>
+    <script src="js/mapdata.js"></script>
+    <script src="js/continentmap.js"></script>
 </head>
 
 <body>
@@ -85,24 +87,6 @@
             <section id="trending-section" hidden="true">
                 <section id="map-section">
                     <div id="map"></div>
-                    <script>
-                        function initMap() {
-                            var uluru = {
-                                lat: 23.676860,
-                                lng: 77.593842
-                            };
-                            var map = new google.maps.Map(document.getElementById('map'), {
-                                zoom: 4,
-                                center: uluru
-                            });
-                            var marker = new google.maps.Marker({
-                                position: uluru,
-                                map: map
-                            });
-                        }
-                    </script>
-                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArJebjUao2xkPL7w12dRKDMOcjhVBfHPs&callback=initMap">
-                    </script>
                 </section>
                 <section class="answer-section" id="answer-section-trending">
                     <article>

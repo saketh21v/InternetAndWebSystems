@@ -325,6 +325,12 @@ footer {
 /* End of social footer */
 
 
+/* Map */
+#map {
+    width: inherit;
+}
+/* End of Map */
+
 @media screen and (max-width: 768px) {
     
 }
