@@ -1,4 +1,7 @@
 
+
+var _TREND_CONTINENT = 'SA';
+
 function openTrending() {
     var main = document.getElementById("Main");
     main.childNodes[1].setAttribute("hidden", true);
@@ -27,4 +30,9 @@ function changeCat(topic) {
     console.log(topic);
     document.getElementById('inputCat').value = topic;
     document.forms[0].submit();
+}
+
+function changeTrendLoc(continent){
+    _TREND_CONTINENT = continent;
+    alert(continent);
 }
