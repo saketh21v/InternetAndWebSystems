@@ -1,5 +1,3 @@
-
-
 var _TREND_CONTINENT = 'SA';
 
 function openTrending() {
@@ -32,7 +30,11 @@ function changeCat(topic) {
     document.forms[0].submit();
 }
 
-function changeTrendLoc(continent){
+function changeTrendLoc(continent) {
     _TREND_CONTINENT = continent;
     alert(continent);
+    $.get("/trending?continent=" + continent, function (data, status) {
+        console.log(data);
+        document.getElementById('answer-section-trending').innerHTML = data;
+    });
 }
