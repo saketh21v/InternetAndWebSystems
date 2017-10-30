@@ -32,7 +32,7 @@ function changeCat(topic) {
 
 function changeTrendLoc(continent) {
     _TREND_CONTINENT = continent;
-    alert(continent);
+    // alert(continent);
     $.get("/trending?continent=" + continent, function (data, status) {
         console.log(data);
         document.getElementById('answer-section-trending').innerHTML = data;
