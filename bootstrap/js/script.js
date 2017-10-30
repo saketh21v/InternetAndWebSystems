@@ -26,10 +26,19 @@ function navClick(cat) {
             showCase.appendChild(elem);
             console.log('appended books ' + item);
         }, this);
-
-
 }
 
+function addTopic() {
+    // var nav = 
+    var text = prompt("Enter the topic name");
+    var ul = document.getElementsByClassName("nav navbar-nav")[0];;
+    var newLi = document.createElement('li');
+    var ahref = document.createElement('a');
+    ahref.setAttribute('href', '#');
+    ahref.innerHTML = text;
+    newLi.appendChild(ahref);
+    ul.appendChild(newLi);
+}
 
 
 
