@@ -5,10 +5,12 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -30,12 +32,27 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                <li onclick="javascript:addTopic()" id="Add"><a href="#">+</a></li>
-                <li onclick="javascript:navClick('books')" class="active" id="books"><a href="#">Books</a></li>
-                <li onclick="javascript:navClick('watches')" id="watches"><a href="#">Watches</a></li>
-                <li onclick="javascript:navClick('pens')" id="pens"><a href="#">Pens</a></li>
-                <li onclick="javascript:navClick('electronics')" id="electronics"><a href="#">Electronics</a></li>
-                <li onclick="javascript:navClick('toys')" id="toys"><a href="#">Toys</a></li>
+                <li onclick="javascript:addTopic()" id="Add">
+                    <a href="#">+</a>
+                </li>
+                <li onclick="javascript:navClick('books')" class="active" id="books">
+                    <a href="#">Books</a>
+                </li>
+                <li onclick="javascript:navClick('watches')" id="watches">
+                    <a href="#">Watches</a>
+                </li>
+                <li onclick="javascript:navClick('pens')" id="pens">
+                    <a href="#">Pens</a>
+                </li>
+                <li onclick="javascript:navClick('electronics')" id="electronics">
+                    <a href="#">Electronics</a>
+                </li>
+                <li onclick="javascript:navClick('toys')" id="toys">
+                    <a href="#">Toys</a>
+                </li>
+                <li style="float:right">
+                    <a href="#" data-toggle="modal" data-target="#exampleModal" onclick="javascript:fillTable()">Cart</a>
+                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -60,8 +77,12 @@
                     <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="images/banner.png">
                 </div>
             </div>
-            <a class="left carousel-control" href="#carouselMain" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-            <a class="right carousel-control" href="#carouselMain" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            <a class="left carousel-control" href="#carouselMain" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carouselMain" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
         </div>
         <br>
         <br>
@@ -76,6 +97,43 @@
             </div>
         </section>
     </main>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <table class="table table-condensed" id="myTable">
+             <thead>
+               <tr>
+                 <th>Item</th>
+                 <th>Unit Price</th>
+                 <th>Quantity</th>
+                 <th>Net Price</th>
+               </tr>
+             </thead>
+             <tbody id="tbody">
+               <tr style="background-color:blue;" >
+      
+                 <td><b>Total Amount</b></td><td></td><td></td>
+                 <td id="net"></td>
+                <!-- <td></td>-->
+               </tr>
+             </tbody>
+           </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+      
 </body>
 
 <script src="js/script.js"></script>

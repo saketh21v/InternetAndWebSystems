@@ -47,3 +47,8 @@ body {
     height: 70%;
     width: 70%;
 }
+
+.center {
+    width: 150px;
+    margin: 40px auto;
+}
